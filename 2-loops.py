@@ -4,6 +4,8 @@
 num = int(input("Input any number: "))
 print("Input: {}".format(num))
 
+odd_numbers = []
 for i in range(1, num + 1, 2):
-    if i % 2 == 1:
-        print("Output: ", i, end=",")
+    odd_numbers.append(str(i))
+
+print("Output: " + ", ".join(odd_numbers))
