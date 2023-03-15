@@ -1,2 +1,13 @@
+#!/bin/bash
+  
+if [ -e "$1" ]; then   #check if the file exists   
+  if [ -s "$1" ]; then  #check if the file is not empty# Check if the file is not empty
+    echo "0"
+  else
+    echo "1"
+  fi
+else
+  echo "2"
+Fi
 
 
