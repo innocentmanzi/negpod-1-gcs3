@@ -5,10 +5,10 @@ This repository contains solutions to the following GCS-3 Problems for Negpod-1:
 ## Problem 1 🔍
 
 Create a shell script that checks if a file exists or not:
-- If the file doesn’t exist it should print 2
+- If the file doesn’t exist it should print `2`
 - If the file exists:
-  - The file can be empty, in this case print 1
-  - The file is not empty, in this case print 0
+  - The file can be empty, in this case print `1`
+  - The file is not empty, in this case print `0`
 
 
 ## Solution ✅
