@@ -59,7 +59,7 @@ user@User:~$ python 2-loops.py
 ```
 The program will prompt the user to enter an integer, and then output all the odd numbers up to that integer in a comma-separated format.
 
-If the user inputs 5, the program will output 1, 3, 5, as shown in the example in the problem statement. The solution code is already available in the [2-loops.py](./2-loops.py) file.
+If the user inputs `5`, the program will output `1`, `3`, `5` as shown in the example in the problem statement. The solution code is already available in the [2-loops.py](./2-loops.py) file.
 
 ## Problem 4 🔍
 
