@@ -45,6 +45,7 @@ Write a Python program that takes an integer and prints all odd numbers up to th
 Example:
 ```sh
 Input any number: 5
+Input: 5
 Output: 1, 3, 5
 ```
 
