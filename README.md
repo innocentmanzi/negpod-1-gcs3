@@ -16,45 +16,49 @@ Create a shell script that checks if a file exists or not:
 The solution to this problem can be found in the [0-shell_script](./0-shell_script) file of this repository. It can be run from the command line as follows:
 
 ```sh
-user@User:~$ ./0-shell_script
+user@User:~$ ./0-shell_script [filename]
 ```
-The text file with the strings is also created by this script, and its name starts with the current date in the format `yyyy-mm-dd-file.txt`. For example, if today is `February 15, 2023`, the file name would be `2023-02-15-file.txt`.
+The script will check the file and print the appropriate output based on the status of the file. i.e if it exists, empty or not.
 
 ## Problem 2 🔍
 
-Write a script that generates two random numbers, and print each of these numbers and their square roots. Then finally print the sum of their square roots on the screen. The expected output is as below
-
-- The first random number generated is `20243`   
-- The square root is `142`   
-- The second random number generated is `9759`  
-- The square root is `98`   
-- The sum of their square roots is `240`
+Write a Python program that takes an integer input from the user, and performs the following conditional actions:
+- If m  is even, print Weird
+- If m is odd and in the inclusive range of 2 to 5, print Not Weird
+- If m is odd and in the inclusive range of 6 to 20, print Weird
+- If m is odd and greater than  20, print Not Weird
 
 
 ## Solution ✅
 
-The shell script that generates the random numbers and calculates their square roots is called [calculate_square_roots](./calculate_square_roots). It can be run from the command line as follows:
+The Python script for this problem is [1-if.py](./1-if.py) in the repository. To run the script, use the following command:
 
 ```sh
-user@User:~$ ./calculate_square_roots
+user@User:~$ ./1-if.py
 ```
-The script will output the two random numbers, their square roots, and the sum of their square roots, as shown in the example in the problem statement.
+The script will prompt the user to enter an integer and then print the corresponding output based on the conditions specified in the problem statement.
 
 ## Problem 3 🔍
 
-Write a shell script that asks the user to type a phrase, then tells the user the number of words in the phrase and the number of white spaces. The expected output is:
+Write a Python program that takes an integer and prints all odd numbers up to that integer. The program should take the input integer from the user and output the odd numbers in a comma-separated format.
 
-- The number of words is `4`    
-- The number of white spaces is `3`
+Example:
+```sh
+Input any number: 5
+Output: 1, 3, 5
+```
 
 ## Solution ✅
 
-The shell script that asks the user for input and counts the number of words and white spaces is called [count_words_and_spaces](./count_words_and_spaces). It can be run from the command line as follows:
+The Python program that prints all odd numbers up to the input integer is called [2-loops.py](./2-loops.py). It can be run from the command line as follows:
 
 ```sh
-user@User:~$ ./count_words_and_spaces
+user@User:~$ python 2-loops.py
+
 ```
-The script will prompt the user to enter a phrase, and then output the number of words and white spaces in the phrase, as shown in the example in the problem statement.
+The program will prompt the user to enter an integer, and then output all the odd numbers up to that integer in a comma-separated format.
+
+If the user inputs 5, the program will output 1, 3, 5, as shown in the example in the problem statement. The solution code is already available in the [2-loops.py](./2-loops.py) file.
 
 ## Problem 4 🔍
 
