@@ -13,10 +13,10 @@ Create a shell script that checks if a file exists or not:
 
 ## Solution ✅
 
-The solution to this problem can be found in the [print_strings](./print_strings) file of this repository. It can be run from the command line as follows:
+The solution to this problem can be found in the [0-shell_script](./0-shell_script) file of this repository. It can be run from the command line as follows:
 
 ```sh
-user@User:~$ ./print_strings
+user@User:~$ ./0-shell_script
 ```
 The text file with the strings is also created by this script, and its name starts with the current date in the format `yyyy-mm-dd-file.txt`. For example, if today is `February 15, 2023`, the file name would be `2023-02-15-file.txt`.
 
