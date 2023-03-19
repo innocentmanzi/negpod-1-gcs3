@@ -90,8 +90,6 @@ what is your target: 5
 Index: 2
 ```
 
-If you want to test the function with the other inputs provided in the table above, simply replace the values in the `nums` and `target` variables in the `insert` function and run the script again.
-
 ## Problem 5 🔍
 
 Write a python function that takes a Roman numeral as input and converts it to an integer. Roman numerals are represented by the symbols in the table below. The conversion should be done according to the rules specified in the problem statement.
