@@ -110,7 +110,7 @@ The function should satisfy the following constraints:
 
 ## Solution ✅
 
-The python function that satisfies the requirements of the problem statement is called `roman_to_int` and can be found in the [4-dictionary.py](./4-dictionary.py) file.. It can be run from the command line as follows:
+The python function that satisfies the requirements of the problem statement is called `roman_to_int` and can be found in the [4-dictionary.py](./4-dictionary.py) file. It can be run from the command line as follows:
 
 ```sh
 user@User:~$ ./4-dictionary.py
