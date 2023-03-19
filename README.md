@@ -23,10 +23,10 @@ The script will check the file and print the appropriate output based on the sta
 ## Problem 2 🔍
 
 Write a Python program that takes an integer input from the user, and performs the following conditional actions:
-- If m  is even, print Weird
-- If m is odd and in the inclusive range of 2 to 5, print Not Weird
-- If m is odd and in the inclusive range of 6 to 20, print Weird
-- If m is odd and greater than  20, print Not Weird
+- If `m`  is even, print `Weird`
+- If `m` is odd and in the inclusive range of `2` to `5`, print `Not Weird`
+- If `m` is odd and in the inclusive range of `6` to `20`, print `Weird`
+- If `m` is odd and greater than  `20`, print `Not Weird`
 
 
 ## Solution ✅
