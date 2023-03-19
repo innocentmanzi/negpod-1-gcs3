@@ -62,86 +62,65 @@ If the user inputs 5, the program will output 1, 3, 5, as shown in the example i
 
 ## Problem 4 🔍
 
-a) Write a shell script that asks the user for two numbers and outputs their products. The expected output should be a statement as such 
+Write a python function that takes as parameters a list of integers and a target value, it sorts the list in ascending order and returns the index if the target is found. If not, return the index where it would be if it were inserted in order.
 
-```sh
-The product of 3 and 3 is 9.
-```
-b) Suppose you want to create 4 folders. Create a text file with at least 4 words(folder name on each line). Write a shell script that reads each line of the text file. Then creates a corresponding folder for each folder name.
+The table below shows a list of inputs you should pass to your function and the expected results. If you get anything other than the expected result, then your function is not correct and you should correct it.
+
+| Input                | Expected Output |
+|----------------------|----------------|
+| `nums = [1,3,5,6]`, `target = 5` | `2` |
+| `nums = [1,3,5,6]`, `target = 2` | `1` |
+| `nums = [1,3,5,6]`, `target = 7` | `4` |
+
+
 
 ## Solution ✅
 
-a) The shell script that asks the user for two numbers and ouputs their product is called [product-of_2_numbers](./product-of_2_numbers). It can be run from the command line as follows:
-
+The Python function that sorts the list and returns the index of the target value or the index where it would be inserted is [3-loops.py](./3-loops.py). It can be run from the command line as follows:
 ```sh
-user@User:~$ ./product-of_2_numbers
+user@User:~$ python3 3-loops.py
 ```
-The script will prompt the user to enter 2 numbers, and then output the product of the 2 numbers, as shown in the example in the problem statement.
 
-b) The shell script that reads each line of a text file [folders.txt](./folders.txt), then creates a corresponding folder for each folder name is called [create-folders](./create-folders). It can be run from the command line as follows:
-
+The function will prompt the user to enter a comma-separated list of integers and the target value. It will then sort the list in ascending order, and return the index of the target value if it is found, or the index where it would be inserted in order if it is not found. Here is an example of the function being run:
 ```sh
-user@User:~$ ./create-folders
+user@User:~$ python3 3-loops.py
+Enter the list of integers (comma-separated): 1,3,5,6
+what is your target: 5
+Index: 2
 ```
-The script will reads each line of the text file [folders.txt](./folders.txt), then creates a corresponding folder for each folder name.
+
+If you want to test the function with the other inputs provided in the table above, simply replace the values in the `nums` and `target` variables in the `insert` function and run the script again.
 
 ## Problem 5 🔍
 
-Write a shell script that takes a path, and confirms if it is a directory or not. If it is a directory list all files in that directory, if not ask the user to give the file path of a directory.  
-- Expected output: List of files in the directory path that was provided
+Write a python function that takes a Roman numeral as input and converts it to an integer. Roman numerals are represented by the symbols in the table below. The conversion should be done according to the rules specified in the problem statement.
+
+| Symbol | Value |
+|--------|-------|
+| I      | 1     |
+| V      | 5     |
+| X      | 10    |
+| L      | 50    |
+| C      | 100   |
+| D      | 500   |
+| M      | 1000  |
+
+The function should satisfy the following constraints:
+
+- 1 <= len(s) <= 15 where s is the Roman numeral.
 
 ## Solution ✅
 
-The shell script that checks the path and lists the files is [check-and_list_directory](./check-and_list_directory). It can be run from the command line as follows:
+The python function that satisfies the requirements of the problem statement is called `roman_to_int` and can be found in the [4-dictionary.py](./4-dictionary.py) file.. It can be run from the command line as follows:
 
 ```sh
-user@User:~$ ./check-and_list_directory
+user@User:~$ ./4-dictionary.py
 ```
-The script will prompt the user to enter a path, and then output a list of files in the directory if it is a directory, or ask the user to enter the path of a directory if it is not a directory, as shown below: 
+The function will prompt the user to enter a Roman numeral, it will then convert it to an integer. Here is an example of the function being run:
 ```sh
-teniola@Teniola:~/Group-_gcs-2-$ pwd
-/home/teniola/Group-_gcs-2-
-teniola@Teniola:~/Group-_gcs-2-$ ./check-and_list_directory
-Enter a path: /home/teniola/Group-_gcs-2-
-The path you entered is a directory
-Listing all files in the directory:
-total 64
-drwxr-xr-x 4 teniola teniola 4096 Feb 17 16:39 .
-drwxr-xr-x 6 teniola teniola 4096 Feb 17 16:31 ..
-drwxr-xr-x 8 teniola teniola 4096 Feb 17 16:41 .git
--rwxr-xr-x 1 teniola teniola  204 Feb 15 16:15 Problem_1_paterne
--rw-r--r-- 1 teniola teniola 2431 Feb 17 15:49 README.md
--rwxr--r-- 1 teniola teniola  467 Feb 17 14:38 calculate_square_roots
--rwxr-xr-x 1 teniola teniola  585 Feb 17 15:45 check-and_list_directory
--rwxr--r-- 1 teniola teniola  210 Feb 17 14:54 count_words_and_spaces
--rwxr-xr-x 1 teniola teniola  136 Feb 17 15:22 create-folders
--rw-r--r-- 1 teniola teniola   32 Feb 17 15:05 folders.txt
--rw-r--r-- 1 teniola teniola   99 Feb 17 15:54 message_template.txt
--rw-r--r-- 1 teniola teniola   61 Feb 17 15:53 names.txt
--rwxr-xr-x 1 teniola teniola  578 Feb 17 16:28 new-year_message
--rwxr--r-- 1 teniola teniola  204 Feb 17 14:23 print_strings
--rwxr-xr-x 1 teniola teniola  214 Feb 17 15:03 product-of_2_numbers
-drwxr-xr-x 6 teniola teniola 4096 Feb 17 16:39 test
-teniola@Teniola:~/Group-_gcs-2-$
-```
-
-## Problem 6 🔍
-
-Suppose that you want to write the same message to many people except that you want each message personalized with the recipients’ names. This can be achieved using a shell script.
-
-## Solution ✅
-
-The shell script that creates personalized messages for each recipient is [new-year_message](./new-year_message). It can be run from the command line as follows:
-
-```sh
-user@User:~$ ./new-year_message
-```
-The script will read the text file [names.txt](./names.txt), which is in the same directory as the script, and the message template in [message_template.txt](./message_template.txt). It will then create a personalized message for each recipient in a file named after the recipient. For example, if the recipient's name is `Noella`, the file name would be [Noella.txt](./test/Noella.txt). The message in the file will be personalized with the recipient's name, as shown below:
-
-```sh
-user@User:~/Group-_gcs-2-/test$ cat Noella.txt
-Happy New Year Noella!
-May the coming year be full of grand adventures and opportunities.
+user@User:~$ python3 4-dictionary.py
+enter your roman numeral: XIX
+19
 ```
 
 ## Collaborators 🤝
